@@ -1,15 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- Base application theme. -->
     <style name="SoftwareDevTheme" parent="Theme.AppCompat.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/primary_calm_greenblue</item>
         <item name="colorPrimaryDark">@color/blue_dark_water</item>
         <item name="colorAccent">@color/sochny_red</item>
         <item name="android:colorBackground">@color/blue_dark_water</item>
+        <item name="android:navigationBarColor">@color/blue_dark_water</item>
         <item name="android:textColorPrimaryInverse">@color/dark_orange</item>
         <item name="android:colorForeground">@color/calm_graygreen</item>
         <item name="android:textColorSecondaryInverse">@color/secondary_text_material_light</item>
     </style>
-
 </resources>

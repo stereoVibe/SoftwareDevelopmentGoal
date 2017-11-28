@@ -10,13 +10,158 @@
         tools:context="io.sokolvault.softwaredevgoal.MainActivity">
 
         <TextView
+            android:id="@+id/text_progress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/doppio_one"
+            android:text="Progress"
+            android:textColor="#4b666e"
+            android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/btn_change_target"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/progress_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:autoSizeMaxTextSize="36dp"
+            android:autoSizeMinTextSize="62dp"
+            android:autoSizeStepGranularity="8dp"
+            android:autoText="true"
+            android:fontFamily="@font/doppio_one"
+            android:keepScreenOn="false"
+            android:text="78%"
+            android:textColor="#dc7928"
+            android:textSize="46sp"
+            app:layout_constraintBottom_toBottomOf="@+id/progress_circle"
+            app:layout_constraintEnd_toEndOf="@+id/progress_circle"
+            app:layout_constraintStart_toStartOf="@+id/progress_circle"
+            app:layout_constraintTop_toTopOf="@+id/progress_circle"
+            app:layout_constraintVertical_bias="0.48000002" />
+
+        <ProgressBar
+            android:id="@+id/progress_circle"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:foregroundTint="@color/sochny_red"
+            android:indeterminate="true"
+            android:progress="@android:integer/config_mediumAnimTime"
+            app:layout_constraintBottom_toTopOf="@+id/guideline_progress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_progress" />
+
+        <TextView
+            android:id="@+id/text_time_worked"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/doppio_one"
+            android:text="You've worked for"
+            android:textColor="#4b666e"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progress_circle"
+            android:layout_marginLeft="32dp" />
+
+        <TextView
+            android:id="@+id/time_worked_string"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/doppio_one"
+            android:text="5 hours 13 minutes"
+            android:textAlignment="viewStart"
+            android:textSize="14sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/text_time_worked"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="32dp"
+            android:layout_gravity="start" />
+
+        <TextView
+            android:id="@+id/text_target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/doppio_one"
+            android:text="Target"
+            android:textColor="#4b666e"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.050000012" />
+
+        <TextView
+            android:id="@+id/target_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/doppio_one"
+            android:text="5 hours 30 minutes"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_target" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <TextView
+            android:id="@+id/text_time_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/doppio_one"
+            android:text="Work harder for"
+            android:textColor="#4b666e"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_time_worked"
+            android:layout_marginLeft="32dp" />
+
+        <Button
+            android:id="@+id/btn_change_target"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="0dp"
+            android:text="change target"
+            android:textColor="@color/sochny_red"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/target_string" />
+
+        <TextView
+            android:id="@+id/time_left_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/doppio_one"
+            android:text="17 minutes"
+            app:layout_constraintStart_toStartOf="@+id/time_worked_string"
+            app:layout_constraintTop_toBottomOf="@+id/time_worked_string" />
 
     </android.support.constraint.ConstraintLayout>
 </layout>
