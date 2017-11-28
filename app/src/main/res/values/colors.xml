@@ -3,4 +3,13 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="red_wine">#350c09</color>
+    <color name="dark_orange">#793c13</color>
+    <color name="foam_green_accent">#52b58f</color>
+    <color name="blue_dark_water">#0f1b2d</color>
+    <color name="sochny_red">#c32439</color>
+    <color name="calm_graygreen">#d2ddd8</color>
+    <color name="transp">#001c57ac</color>
+    <color name="primary_calm_greenblue">#4b666e</color>
+    <color name="secondary_text_material_light">@color/blue_dark_water</color>
 </resources>
