@@ -11,5 +11,23 @@
         <item name="android:textColorPrimaryInverse">@color/dark_orange</item>
         <item name="android:colorForeground">@color/calm_graygreen</item>
         <item name="android:textColorSecondaryInverse">@color/secondary_text_material_light</item>
+        <item name="android:statusBarColor">@color/blue_dark_water</item>
+    </style>
+
+    <style name="DevTheme002" parent="SoftwareDevTheme">
+        <item name="android:colorBackground">@color/blue_003_01</item>
+        <item name="android:navigationBarColor">@color/blue_003</item>
+        <item name="android:statusBarColor">@color/blue_003</item>
+        <item name="colorAccent">@color/yellow_003</item>
+        <item name="android:colorForeground">@color/beige_003</item>
+        <item name="colorPrimary">@color/red_003_01</item>
+        <item name="colorPrimaryDark">@color/brown_003</item>
+        <item name="android:textColorPrimaryInverse">@color/gorchica</item>
+    </style>
+
+    <style name="DevTheme003" parent="DevTheme002">
+        <item name="android:colorBackground">@color/blue_003</item>
+        <item name="android:navigationBarColor">@color/blue_003_01</item>
+        <item name="android:statusBarColor">@color/blue_003_01</item>
     </style>
 </resources>

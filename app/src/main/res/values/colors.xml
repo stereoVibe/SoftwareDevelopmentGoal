@@ -12,4 +12,27 @@
     <color name="transp">#001c57ac</color>
     <color name="primary_calm_greenblue">#4b666e</color>
     <color name="secondary_text_material_light">@color/blue_dark_water</color>
+    <color name="background_shaped">#0b80bfdb</color>
+    <color name="deep_blue_table">#1b2c3f</color>
+    <color name="betlighter_blue_table">#3d697a</color>
+    <color name="tykva_accent">#f4651a</color>
+    <color name="calm_grey">#c2b7b6</color>
+    <color name="pinky_peach">#fca771</color>
+    <color name="soso_color">#a68900</color>
+    <color name="frog_dark_skin">#030000</color>
+    <color name="frog_accent">#fbf555</color>
+    <color name="red_carpet_wine">#241913</color>
+    <color name="icecream_blue_accent">#5eacc9</color>
+    <color name="gorchica_primary">#dd2316</color>
+    <color name="gorchica_dark">#8b3c0c</color>
+    <color name="almost_white">#fffefe</color>
+    <color name="gorchica">#e4970f</color>
+    <color name="blue_003">#242e3e</color>
+    <color name="red_003">#ca0928</color>
+    <color name="blue_003_01">#2d3a4e</color>
+    <color name="yellow_003">#dfc54f</color>
+    <color name="red_003_01">#d63756</color>
+    <color name="beige_003">#f2d8bb</color>
+    <color name="brown_003">#9f6440</color>
+    <color name="blue_003_transp">#f5242e3d</color>
 </resources>
